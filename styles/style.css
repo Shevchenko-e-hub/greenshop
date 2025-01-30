@@ -1,0 +1,144 @@
+.container {
+    background: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 3px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background: #46A358;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #46A358;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #46A358;
+}
+
+
+.header {
+    font-size: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 3px;
+    vertical-align: top;
+}
+
+.header .logo,
+.header__nav,
+.btn {
+    display: inline-block;
+    vertical-align: centr;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 35px;
+}
+
+.header__nav {
+    width: calc(100% - 350px);
+}
+
+.header__nav-list {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header__nav-list li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.header__nav-list a {
+    text-decoration: none;
+    color: #3D3D3D;
+    padding-bottom: 30px;
+}
+
+.active a {
+    font-weight: 700;
+}
+
+.active a,
+.header__nav-list a:hover {
+    border-bottom: solid 3px #46A358;
+    padding-bottom: 5px;
+}
+
+hr {
+    border-top: 1px solid #46A35880;
+    max-width: 1200px;
+}
+
+.banner {
+    background: #f1efef;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px;
+    vertical-align: top;
+}
+
+
+.cont_banner,
+.f-image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about {
+    max-width: 500px;
+    size: 14px;
+    padding-bottom: 50px;
+    margin: 5px;
+}
+
+.welcome {
+    font-size: 15px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.planet {
+    font-size: 72px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.f-image {
+    max-width: 570px;
+    padding: 10px;
+    border: 3px;
+    margin: 5px;
+}
+
+.cont_banner {
+    max-width: 570px;
+    padding: 10px;
+    border: 3px;
+    margin: 5px;
+}
+
+.flowers {
+    height: 450px;
+    padding: 3px;
+    margin: 3px;
+}
