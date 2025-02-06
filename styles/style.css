@@ -1,28 +1,125 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-MediumItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
 ul {
     list-style-type: none;
 }
 
-hr {
-    border-bottom: 1px solid #46A35880;
-    max-width: 1200px;
-}
-
 .container {
-    background: none;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5px;
-    border: 3px;
+}
+
+.header .container {
+    border-bottom: solid 0.3px rgba(70, 163, 88, 0.5);
+    padding-bottom: 10px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 12px;
     color: #fff;
     background: #46A358;
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid #46A358;
+    text-align: center;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -34,9 +131,7 @@ hr {
 .header {
     font-size: 0;
     padding: 5px;
-    border: 3px;
-    vertical-align: top;
-    border-color: green;
+    margin-bottom: 10px;
 }
 
 .header .logo,
@@ -59,7 +154,7 @@ hr {
 }
 
 .header__nav {
-    width: calc(100% - 245px);
+    width: calc(100% - 242px);
 }
 
 .header__nav-list {
@@ -82,17 +177,17 @@ hr {
 }
 
 .active a,
+.content-nav-list a:hover,
 .header__nav-list a:hover {
     border-bottom: solid 3px #46A358;
     padding-bottom: 5px;
 }
 
 .banner {
-    background: #f1efef;
-    max-width: 1200px;
-    margin: auto;
+    background: #FBFBFB;
     padding: 10px;
-    vertical-align: top;
+    font-size: 14px;
+    margin-bottom: 50px;
 }
 
 .cont_banner,
@@ -102,34 +197,41 @@ hr {
 }
 
 .about {
-    max-width: 500px;
-    padding: 5px;
-    margin-bottom: 50px;
+    max-width: 570px;
+    margin-bottom: 40px;
+    color: #727272;
 }
 
 .welcome {
-    font-size: 15px;
-    max-width: 350px;
-    padding: 3px;
-    margin-top: 50px;
+    font-size: 16px;
 }
 
 .planet {
-    font-size: 72px;
-    padding: 5px;
-    margin: 5px;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+}
+
+.banner .btn {
+    text-transform: uppercase;
+    padding: 6px 10px;
+    min-width: 140px;
+    font-weight: 700;
 }
 
 .f-image {
-    max-width: 570px;
+    max-width: 550px;
     padding: 10px;
     border: 3px;
 }
 
 .cont_banner {
-    max-width: 570px;
+    max-width: 600px;
     padding: 10px;
     vertical-align: top;
+    margin-top: 40px;
 }
 
 .flowers {
@@ -139,9 +241,173 @@ hr {
 }
 
 .planet span {
-   color: green;
+    color: green;
 }
 
+
 .logout img {
- vertical-align: middle;
+    vertical-align: middle;
 }
+
+.sidebar {
+    float: left;
+    width: 310px;
+    padding: 14px 18px;
+    font-size: 15px;
+    background-color: #FBFBFB;
+}
+
+.sidebar h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.sidebar__categories {
+    padding: 0px 0px 0px 12px;
+    margin: 0;
+}
+
+.sidebar__categories .active {
+    color: #46A358;
+    font-weight: 700;
+}
+
+.sidebar__categories li {
+    margin-bottom: 20px;
+}
+
+.sidebar__categories a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: inherit;
+}
+
+.sidebar__categories a:hover {
+    color: #46A358;
+}
+
+.sidebar-img{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.sidebar-img img {
+    max-width: 275px;
+}
+
+.sidebar + .production{
+    float: right;
+    width: calc(100% - 310px);
+    padding-left: 50px;
+}
+
+.goods-assort {
+    margin-bottom: 20px;
+}
+
+.goods-assort__filter {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.goods-assort__filter li {
+    display: inline-block;
+    margin-right: 37px;
+}
+
+.goods-assort__filter li.active {
+    font-weight: 700;
+    color: #46A358;
+}
+
+.goods-assort__filter a:hover {
+    color: #46A358;
+}
+
+.goods-assort__filter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.goods-assort__sorting {
+    float: right;
+}
+
+.goods-assort__sorting__title,
+.goods-assort__select {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.goods-assort__sorting__title {
+    margin-right: 10px;
+}
+
+.goods-assort__option:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/arrow-down.svg);
+    vertical-align: middle;
+}
+
+.goods__list {
+    margin: 0 ;
+    padding: 0;
+}
+
+.goods__item {
+    width: 32%;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.goods_img {
+    background: #FBFBFB;
+    text-align: center;
+}
+
+.goods__item h5 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.pages-site {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.pages-site li {
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.pages-site a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    padding-top: 3px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pages-site li.active a,
+.pages-site a:hover {
+    background: #46A358;
+    color: #fff;
+}
+
