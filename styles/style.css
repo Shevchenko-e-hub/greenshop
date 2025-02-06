@@ -100,7 +100,7 @@ ul {
 }
 
 .header .container {
-    border-bottom: solid 1px #46A35880;
+    border-bottom: solid 0.3px rgba(70, 163, 88, 0.5);
     padding-bottom: 10px;
 }
 
