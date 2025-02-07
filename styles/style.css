@@ -413,7 +413,6 @@ ul {
 }
 
 
-
 .info_inner {
     display: flex;
     justify-content: space-between;
@@ -498,17 +497,14 @@ ul {
 }
 
 .body-blog_time {
-    font-weight: 500;
+    font-weight: 600;
     font-size: .875rem;
     line-height: 1.1428571429;
     color: #46a358;
     display: flex;
     gap: 0 .375rem;
-    flex-wrap: nowrap;
-    white-space: nowrap;
     margin: 0;
 }
-
 
 
 .body-blog_item_tittle {
