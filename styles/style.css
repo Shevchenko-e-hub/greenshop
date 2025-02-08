@@ -263,7 +263,7 @@ ul {
 }
 
 .sidebar__categories {
-    padding: 0px 0px 0px 12px;
+    padding: 0 0 0 12px;
     margin: 0;
 }
 
@@ -470,19 +470,19 @@ ul {
     font-size: 14px;
 }
 
+.blog {
+    font-size: 14px;
+    color: #727272;
+}
 
 .blog_inner {
     text-align: center;
 }
 
-.blog_inner p {
-    font-size: 14px;
-    color: #727272;
-}
-
 .blog_tittle {
     font-size: 30px;
     font-weight: 700;
+    color: #3d3d3d;
     margin: 0;
 }
 
@@ -518,7 +518,7 @@ ul {
 }
 
 .body_blog_item {
-   max-width: 270px;
+   max-width: 25%;
 }
 
 .body-blog_tittle {
@@ -544,4 +544,9 @@ ul {
 
 .body-blog_box a:hover {
     color: #46A358;
+}
+
+.body-blog-link a span {
+    display: inline-flex;
+    align-items: center;
 }
