@@ -187,6 +187,66 @@ ul {
     bottom: 4px;
 }
 
+.header-nav__list-item:hover .header-nav__submenu {
+    display: block;
+}
+
+.header-nav__submenu a {
+    padding: 10px 15px;
+    display: block;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header-nav__submenu a:hover {
+    background-color: #1A712A;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-nav__list-item {
+    position: relative;
+}
+
+.header-nav__submenu-item {
+    width: 188px;
+    text-align: left;
+}
+
+.header-nav__list li:hover .header-nav__submenu,
+.header-nav__submenu-item:hover .header-nav__secondmenu {
+    display: block;
+}
+
+.header-nav__submenu {
+    position: absolute;
+    display: none;
+    transform: translateX(-50%);
+    padding-top: 34px;
+}
+
+.header-nav__submenu a {
+    padding: 8px 14px;
+    display: block;
+    background:#EDF6EE;
+}
+
+.header-nav__secondmenu {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 230px;
+    top: 34px;
+    display: none;
+}
+
+.header-nav__secondmenu li a {
+    width: 178px;
+}
+
 .active a {
     font-weight: 700;
 }
