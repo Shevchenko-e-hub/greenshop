@@ -164,8 +164,12 @@ ul {
 
 .header__nav-list li {
     display: inline-block;
+}
+
+.header-nav__list-item {
     margin: 0 25px;
 }
+
 
 .header__nav-list a {
     text-decoration: none;
@@ -195,13 +199,13 @@ ul {
 .header-nav__submenu a {
     padding: 10px 15px;
     display: block;
-    color: #3D3D3D;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
 }
 
-.header-nav__submenu a:hover {
+.header-nav__submenu li {
+    background: #EDF6EE;
+}
+
+.header-nav__submenu li:hover>a {
     background-color: #1A712A;
     color: #fff;
     font-size: 16px;
@@ -240,7 +244,8 @@ ul {
     display: none;
     transform: translateX(-50%);
     padding-top: 34px;
-    left: 20px;
+    left: 50%;
+    padding-left: 0;
 }
 
 .header-nav__submenu a {
@@ -252,7 +257,8 @@ ul {
 .header-nav__secondmenu {
     padding: 0;
     position: absolute;
-    left: 230px;
+    left: 100%;
+    padding-left: 2px;
     top: 34px;
     display: none;
 }
