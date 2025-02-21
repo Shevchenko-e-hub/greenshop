@@ -82,6 +82,104 @@
     font-style: italic;
 }
 
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?v4ygxo');
+    src: url('../fonts/icomoon.eot?v4ygxo#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?v4ygxo') format('truetype'),
+        url('../fonts/icomoon.woff?v4ygxo') format('woff'),
+        url('../fonts/icomoon.svg?v4ygxo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-log-out:before {
+    content: "\e908";
+}
+
+.icon-map:before {
+    content: "\e902";
+}
+
+.icon-arrow-right:before {
+    content: "\e910";
+}
+
+.icon-arrow-down:before {
+    content: "\e900";
+}
+
+.icon-arrow-r:before {
+    content: "\e901";
+}
+
+.icon-calling:before {
+    content: "\e903";
+}
+
+.icon-facebook:before {
+    content: "\e904";
+}
+
+.icon-frame:before {
+    content: "\e905";
+}
+
+.icon-glass:before {
+    content: "\e906";
+}
+
+.icon-heart:before {
+    content: "\e907";
+}
+
+.icon-instagram:before {
+    content: "\e909";
+}
+
+.icon-linkedin:before {
+    content: "\e90a";
+}
+
+.icon-logout:before {
+    content: "\e90b";
+}
+
+.icon-message:before {
+    content: "\e90c";
+}
+
+.icon-shopping:before {
+    content: "\e90d";
+}
+
+.icon-twitter:before {
+    content: "\e90e";
+}
+
+.icon-union:before {
+    content: "\e90f";
+}
+
+
 body {
     font-family: 'Cera Pro', sans-serif;
     color: #3D3D3D;
@@ -237,6 +335,15 @@ ul {
     line-height: 1;  
 }
 
+.header-nav__submenu-item:has(ul):hover>a:after {
+    content: url("../images/frame-white.svg");
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    line-height: 1;
+}
+
 .header-nav__list li:hover .header-nav__submenu,
 .header-nav__submenu-item:hover .header-nav__secondmenu {
     display: block;
@@ -272,6 +379,15 @@ ul {
 
 .active a {
     font-weight: 700;
+}
+
+.logout i,
+.logout span {
+    vertical-align: middle;
+}
+
+.logout i {
+    font-size: 20px;
 }
 
 .goods-assort__filter .active a,
@@ -505,13 +621,16 @@ ul {
 .short_tabs_icon_img {
     height: 30px;
     padding: 5px;
+    font-size: 20px;
+    color: rgba(61, 61, 61, 1);
     background-color: #fff;
     border-radius: 4px;
     display: none;
+    text-decoration: none;
 }
 
-.short_tabs_icon_img img:hover {
-    opacity: 0.6;
+.short_tabs_icon a:hover {
+    color: rgba(70, 163, 88, 1);
 }
 
 .info-sale {
@@ -555,7 +674,10 @@ ul {
     margin-left: 10px;
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
 }
+
+
 
 .pages-site a {
     width: 35px;
@@ -563,8 +685,9 @@ ul {
     display: inline-block;
     border-radius: 4px;
     border: 1px solid #e5e5e5;
-    padding-top: 3px;
+    font-size: 18px;
     text-decoration: none;
+    line-height: 1.8;
     color: inherit;
 }
 
@@ -607,6 +730,12 @@ ul {
     justify-content: center;
 }
 
+.info_item_content i{
+    padding-left: 5px;
+    line-height: 1.8;
+}
+
+
 .info_tittle {
     max-width: 150px;
     font-weight: 900;
@@ -625,6 +754,8 @@ ul {
 .info_text p {
     margin: 0;
 }
+
+
 
 .info_item a {
     display: flex;
@@ -701,6 +832,13 @@ ul {
     font-size: 14px;
     color: #3d3d3d;
     text-decoration: none;
+}
+
+
+
+.body-blog_link i{
+    font-size: 16px;
+    padding-left: 5px;
 }
 
 .body-blog_box a:hover {
@@ -839,6 +977,13 @@ ul {
     max-width: 70%;
 }
 
+
+.contact_list_item i{
+    margin-right: 10px;
+    font-size: 18px;
+    color: rgba(70, 163, 88, 1);
+}
+
 .contact_list_item img{
     margin-right: 10px;
 }
@@ -909,13 +1054,17 @@ ul {
     border: 1px solid #46A35833;
 }
 
-.social_icon_img img{
+.social_icon_img a {
+    color: rgba(70, 163, 88, 0.6);
+    text-decoration: none;
+    font-size: 18px;
     vertical-align: middle;
 }
 
 
-.social_icon_img:hover {
-    opacity: 0.6;
+.social_icon_img a:hover {
+    color: #1A712A;
+    /* opacity: 0.6; */
 }
 
 .copyright {
