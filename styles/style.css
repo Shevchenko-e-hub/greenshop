@@ -121,11 +121,13 @@ ul {
     border: 1px solid #46A358;
     text-align: center;
     font-weight: 500;
+    transition: background-color 0.2s, transform 0.2s linear;
 }
 
 .btn:hover {
     background: #fff;
     color: #46A358;
+    transform: scale(1.1);
 }
 
 
@@ -177,6 +179,7 @@ ul {
     padding-bottom: 24px;
     position: relative;
 }
+
 
 
 .header__nav-list li.active a:after,
@@ -380,6 +383,13 @@ ul {
     color: #46A358;
 }
 
+.sidebar__categories li:hover {
+    font-weight: 700;
+    transform: scale(1.1);
+    transform-origin: left;
+    transition: transform 0.1s;
+}
+
 .sidebar-img{
     text-align: center;
     margin-top: 200px;
@@ -417,6 +427,11 @@ ul {
 
 .goods-assort__filter a:hover {
     color: #46A358;
+}
+
+.goods-assort__filter li:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 .goods-assort__filter a {
@@ -774,6 +789,7 @@ ul {
     padding: 10px 15px;
     border: 1px solid #46A358;
     text-decoration: none;
+    transition: background-color 0.4s, transform 0.4s linear;
 }
 
 .btn_join:hover {
