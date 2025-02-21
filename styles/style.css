@@ -606,7 +606,7 @@ ul {
 
 }
 
-.goods__item .goods_img:hover:before {
+.goods__item:hover:before {
     content: "";
     width: 100%;
     height: 1px;
