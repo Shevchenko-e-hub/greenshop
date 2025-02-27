@@ -1073,3 +1073,99 @@ ul {
     text-align: center;
 }
 
+.burger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    left: 5px;
+    top: 7px;
+
+}
+
+.burger span,
+.burger:after,
+.burger:before {
+    content: '';
+    width: 30px;
+    display: block;
+    height: 3px;
+    background: #46A358;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.burger:before {
+    top: 0;
+    left: 0;
+    transition: transform 0.2s linear;
+}
+
+.burger:after {
+    bottom: 0;
+    top: auto;
+    transition: transform 0.2s linear;
+}
+
+.burger span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -2px);
+    transition: transform 0.2s linear, opacity 0.2s;
+}
+
+.main-menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.main-menu a:hover {
+    color: #46A358;
+
+}
+
+
+.check {
+    position: absolute;
+    left: -9999px;
+}
+
+.header_responsive {
+    position: relative;
+}
+
+.main-menu {
+    padding: 20px;
+    border: 2px solid #1A712A;
+    border-radius: 5px;
+    background: #edecec;
+    position: absolute;
+    width: 220px;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+}
+
+.main-menu .social_icon{
+    margin: 20px 0 0 -50px;
+}
+
+.check:checked+.burger span {
+    opacity: 0;
+    transform: translate(-50%, -2px) scale(0);
+}
+
+.check:checked+.burger:after {
+    transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.check:checked+.burger:before {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.label-input:has(.check:checked)+.main-menu {
+    transform: translateX(0);
+}
